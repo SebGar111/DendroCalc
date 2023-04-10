@@ -137,76 +137,7 @@ def zapytanie_o_kontynuacje():
 
 
 
-# def game():
-#     game_width = 15
-#     game_high = 15
-#     key_x=1#randint(0,game_width)
-#     key_y=1#randint(0,game_high)
-#
-#
-#     x=0
-#     y=0
-#
-#     if key_x ==3 and key_y ==3:
-#         game()
-#
-#     Did_player_found_the_torch=False
-#
-#     while not Did_player_found_the_torch:
-#         print()
-#         print(f"{name+odmiana}!Zaczynamy rozgrywke!")
-#
-#
-#         move = input(f"Gdzie jest butelka,{name+odmiana}?")
-#
-#         match move.lower():
-#             case  "w":
-#                   y += 1
-#                   if y > game_high:
-#                    print('siatka ogrodzenia')
-#                    y = game_high
-#             case  "s":
-#                 y -= 1
-#                 if y < 0:
-#                     print('siatka ogrodzenia')
-#                     y = game_high
-#             case   'a':
-#                 x += 1
-#                 if x > game_width:
-#                     print('siatka ogrodzenia')
-#                     x = game_width
-#             case    'd':
-#                 x-=1
-#                 if x < 0:
-#                  print('siatka ogrodzenia')
-#                  x = game_width
-#             case     "q":
-#                 print('koniec')
-#                 quit()
-#
-#             case '_':
-#              print('Niewłaściwy klawisz!')
-#              continue
-#         if x == key_x and y == key_y:
-#             print("Latarka znaleziona")
-#             zapytanie_o_kontynuacje()
-#
-#         if x == 3 and y == 3:
-#             print("rów, wracasz na początek")
-#             y = 0
-#             x = 0
-#         if x == 7 and y == 4:
-#             print("rów, wracasz na początek")
-#             y = 0
-#             x = 0
-#         if x == 9 and y == 9:
-#             print("rów, wracasz na początek")
-#             y = 0
-#             x = 0
-#
-#
-#
-#         print(f"wektor wschód/zachód {x} wektor północ/południe {y}")
+
 
 game()
 
