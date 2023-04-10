@@ -5,8 +5,8 @@ import re
 def game():
     game_width = 15
     game_high = 15
-    key_x=1#randint(0,game_width)
-    key_y=1#randint(0,game_high)
+    key_x=randint(0,game_width)
+    key_y=randint(0,game_high)
 
     x=0
     y=0
@@ -105,7 +105,7 @@ elif name[-1] == "r":
     odmiana = "ze"
 
 elif name[-1] == 'a' and not name.capitalize() == 'Kuba':
-    print("SEXCHOOSINGERROR")
+    
     print('Dowidzenia!!!')
     quit()
 
@@ -137,7 +137,7 @@ def zapytanie_o_kontynuacje():
 
 
 
-
+v=v
 
 game()
 
