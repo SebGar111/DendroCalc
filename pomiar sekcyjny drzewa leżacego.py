@@ -43,9 +43,11 @@ while  b  <leght_of_arrow_without_arrowhead:
 
 
 #ostatnia sekcja
-srednicaniepelnejsekcji=input(f"Proszę zmierzyć średnice na wysokości {leght_of_arrow_without_arrowhead}")
+srednicaniepelnejsekcji=int(input(f"Proszę zmierzyć średnice na wysokości {leght_of_arrow_without_arrowhead}"))
 
-voflastsec=(srednicaniepelnejsekcji**2*pi/40000)*true_leght_of_sec/3
+voflastsec=int((srednicaniepelnejsekcji**2*pi/40000)*true_leght_of_sec/3)
 print(voflastsec)
 
+volumeofarrow=voflastsec+summaryvolume
+print(f"{volumeofarrow} m3-iaszosc drzewa")
 

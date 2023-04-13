@@ -5,8 +5,8 @@ import re
 def game():
     game_width = 15
     game_high = 15
-    key_x=randint(0,game_width)
-    key_y=randint(0,game_high)
+    key_x=3#randint(0,game_width)
+    key_y=4#randint(0,game_high)
 
     x=0
     y=0
@@ -24,7 +24,6 @@ def game():
     while not Did_player_found_the_torch:
         steps+=1
         print()
-
 
 
         move = input(f"Gdzie jest butelka,{name+odmiana}?")
@@ -77,11 +76,22 @@ def game():
             y = 0
             x = 0
 
+        distance1 = abs(x - key_x) + abs(y - key_y)
+        if distance1 >= 5:
+            print("Ciemno")
+
+        elif distance1 < 5 or distance1 >2:
+            print("Szaro")
+        elif distance1 == 2:
+            print('Ciepło')
+        elif distance1 <=1:
+            print("gorąco")
+
 
         print(f"wektor wschód/zachód {x} wektor północ/południe {y}")
         print(steps)
 
-#gra cieplo zimno (szukanie latatrki w tatrach z mozliwoscia wpadniecia do rowu)
+#gra cieplo zimno (szukanie latatrki na skawistym biwaku z mozliwoscia wpadniecia do rowu)
 #jesli gracz pojawi sie na polach (3,3),(7,4),(9,9) cofa sie na poczatek
 name = input(str('Podaj swoje imie'))
 
@@ -116,6 +126,7 @@ else:
 
      name = re.sub(r'[e]', '', name)
      odmiana ='u'
+#funkcja pytająca się gracza czy chce kontynuować
 def zapytanie_o_kontynuacje():
     print('Czy chcesz grac dalej? tak/nie')
     #try:
@@ -137,7 +148,9 @@ def zapytanie_o_kontynuacje():
 
 
 
-v=v
+
+
+
 
 game()
 
